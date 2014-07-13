@@ -13,7 +13,7 @@ function plugin(opts) {
   var firstFile = null;
   var contents = null;
 
-  nunjucks.configure(opts.templatePath || './templates');
+  nunjucks.configure(opts.templatePath || path.join(__dirname, 'templates'));
 
   function process(file) {
     var parseOptions = {};
