@@ -1,0 +1,22 @@
+{
+  "name": "gulp-dss",
+  "version": "0.1.0",
+  "description": "A plugin for Gulp to generate UI documentation with DSS Parser",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-util": "^2.2.20",
+    "through": "^2.3.4"
+  },
+  "devDependencies": {
+    "mocha": "^1.20.1",
+    "nunjucks": "^1.0.5",
+    "dss": "^1.0.4",
+    "sinon": "~1.10.3",
+    "chai": "~1.9.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Jack Hsu <jack.hsu@gmail.com>",
+  "license": "MIT"
+}
