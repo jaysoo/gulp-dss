@@ -17,12 +17,12 @@
   },
   "dependencies": {
     "gulp-util": "^2.2.20",
-    "through": "^2.3.4"
+    "through": "^2.3.4",
+    "dss": "^1.0.4",
+    "nunjucks": "^1.0.5"
   },
   "devDependencies": {
     "mocha": "^1.20.1",
-    "nunjucks": "^1.0.5",
-    "dss": "^1.0.4",
     "chai": "~1.9.1"
   },
   "scripts": {
