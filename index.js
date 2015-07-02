@@ -40,12 +40,9 @@ function plugin(opts) {
 
   function endStream() {
     if (firstFile) {
-      var joinedPath = path.join(firstFile.base, opts.output);
-
       var newFile = new File({
         cwd: firstFile.cwd,
-        base: firstFile.base,
-        path: joinedPath,
+        path: opts.output,
         contents: new Buffer(wrapContents(contents.join('\n')))
       });
 
