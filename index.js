@@ -12,8 +12,12 @@ function plugin(opts) {
 
   var firstFile = null;
   var contents = null;
+  var nunjucksPath = opts.templatePath || path.join(__dirname, 'templates');
+  var nunjucksOpts = {
+    watch: false,
+  };
 
-  nunjucks.configure(opts.templatePath || path.join(__dirname, 'templates'));
+  nunjucks.configure(nunjucksPath, nunjucksOpts);
 
   function process(file) {
     var parseOptions = {};
